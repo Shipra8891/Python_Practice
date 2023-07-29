@@ -63,4 +63,86 @@ print("result of x*y =",x * y)
 print("result of x+y =",x+y)
 print("result of x-y = ",x-y)
 
-print("---------")
+print("--------data type---------")
+a = 42
+b = 32.30
+c = "Hello"
+d = True
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+print("---------working with list------")
+my_list = [1,2,3]
+print("my_list = ",my_list)
+print("first element =",my_list[0])
+print("second element =",my_list[1])
+print("third element =",my_list[2])
+print("length of above list =",len(my_list))
+
+print("------adding new element to list_____")
+my_list_2 = ['one','two','three',4,5]
+print(my_list_2)
+print("My second list =",my_list_2)
+my_list_2.append("six") # this is operation
+
+print(my_list_2)
+print("Appended result List =",my_list_2)
+my_list_2.append("seven")
+print(my_list_2)
+my_list_2.append("Delhi")
+print(my_list_2)
+
+list =[1,2,3,['a','b','c'],'India']
+list.append("3.5")
+print(list)
+print("append float number",list)
+list.append(["country,state"])
+print("append string",list)
+
+print("------extend list with another list------")
+list2 = [1,2,3]
+list2.extend([4,5])
+print("extend list",list2)
+#difference between append and extend
+#in append we can add only one element at the end of list
+#in extend we can add multiple elements at the end of the list
+
+list2.extend([6,7,8])
+print("extend list ==",list2)
+
+print("----Range-------")
+range1 = range(10)
+print(range1)
+
+print("manually without for loop")
+print(range1[0])
+print(range1[1])
+print(range1[2])
+print(range1[3])
+print(range1[4])
+print(range1[5])
+print(range1[6])
+print(range1[7])
+print(range1[8])
+print(range1[9])
+
+
+# now print each element within the range
+# loop / iteration / repeat and execute
+# range1 = range(10)
+print("manually with for loop")
+for r in range1:
+      print(r)
+
+#Need to check this
+#p = list(range(10))
+#print(p)
+
+
+
+
+
+
+
