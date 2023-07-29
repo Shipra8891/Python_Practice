@@ -62,3 +62,5 @@ print("Result of x/y =" ,x/y)
 print("result of x*y =",x * y)
 print("result of x+y =",x+y)
 print("result of x-y = ",x-y)
+
+print("---------")
