@@ -118,6 +118,13 @@ print(my_set)
 # Updating multiple elements
 my_set.update([10,"sunday","wednesday",25,15])
 print(my_set)
+my_set.discard(3)
+
+# difference between remove and discard -
+# both will remove the element
+# if we use .remove for same elements then it will give error
+# but if we use discard for already removed element then it will not give error
+# and will ignore it
 
 # Set Function
 s1={'a','b','c'}
@@ -135,5 +142,16 @@ print(set3)
 
 # for reverse
 a = ("shipra")
+#approach 1
+print(a[-1::-1])
+
+#approach 2
+print(a[::-1])
+
+# Tuple unpacking
+a = (10,20)
+x,y = a
+print(x)
+print(y)
 
 
