@@ -102,6 +102,8 @@ print(my_dict.values())
 # Adding a new element
 my_dict["occupation"]= "CA"
 print(my_dict)
+my_dict["name"] = "sonu"
+print("Adding same key value",my_dict)
 
 # Changing an existing element
 my_dict["age"]="32"
@@ -130,12 +132,12 @@ my_set.discard(3)
 s1={'a','b','c'}
 s2={1,2,3}
 #s1.union(s2)
-print(s1.union(s2))
+print("Union of 2 sets",s1.union(s2))
 
-# Intersections of 2 Set
+# Intersections of 2  - common element in both sets
 set1={1,2,3,4,5,6}
 set2={4,5,6,7,8,9}
-print(set1.intersection(set2))
+print("Sets Intersection result",set1.intersection(set2))
 
 set3={1,1,2,2,4,3,5,5,}
 print(set3)
@@ -153,5 +155,10 @@ a = (10,20)
 x,y = a
 print(x)
 print(y)
+
+# pop
+numbers =[1,2,3,4,5]
+print("result of pop",numbers.pop(2))
+print(numbers)
 
 
