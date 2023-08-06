@@ -33,10 +33,46 @@ print(df2)
 
 # reading data frame from file
 df_test1 = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\a.csv")
+
+# rule 1 -copy path and paste here, put r before it.
+# rule 2 - change \ to / and print
+
+
 print(df_test1)
 print("Shape of dataframe",df_test1.shape)
 print("Index of dataframe",df_test1.index)
 
-# rule 1 -copy path and paste here, put r before it.
-# rule 2 - change \ to / and print
+print(df_test1.head(2))
+print(df_test1.head(3))
+print(df_test1['name'].head(3))
+
+print("------- dataframe analyze-------")
+# .info() - it is a fuction which give information
+
+print(df_test1.info())
+
+# .head() - it gives total rows data.
+# by default it gives 5 rows data only....head()
+# if you want more data write under head bracket
+# head print from top
+# tail print last or from bottom
+
+print(df_test1.tail(2))
+
+# .index -
+print(df_test1.index)
+
+# .unique() - select unique column values
+
+print(df_test1['city'].unique())
+# .nunique() - number of unique value.
+# It will not consider null values or blank values
+
+
+print(df_test1['city'].nunique())
+
+#value_counts
+
+print(df_test1['city'].value_counts())
+
 
