@@ -33,9 +33,19 @@ print(double_the_number1(8))  # default argument
 print(double_the_number1(7))  # passing argument
 
 
+# syntax of defining a function
+# def name_of_function (number of argument )
 def add_the_number1(a1, a2):
     return a1 + a2
 
+
+def complex_calculation(b1, b2, b3, b4):
+    return (b1 + b2 * b3 - b4)
+
+
+
+
+print("Result of complex calculation",complex_calculation(10, 44, 33, 45))
 
 print("result of addition", add_the_number1(10, 22))
 
@@ -61,9 +71,7 @@ add_data = lambda num1, num2: num1 + num2
 print(add_data(10, 20))
 
 cal_data = lambda p1, p2, p3: ((p1 + p2) - p3)
-print(cal_data(10,20,30))
+print(cal_data(10, 20, 30))
 
 cal_data1 = lambda q1, q2, q3: (q1 * q2 / q3)
-print(cal_data1(10,20,10))
-
-
+print(cal_data1(10, 20, 10))

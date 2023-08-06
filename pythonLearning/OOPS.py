@@ -75,12 +75,27 @@ class Rectangle:
 MathArea = Rectangle()
 # MathArea is object of this class or class instance
 
-print("Length of rectangle =",MathArea.length)
-print("Breadth of rectangle =",MathArea.breadth)
-print("Area of rectangle",MathArea.area())
+print("Length of rectangle =", MathArea.length)
+print("Breadth of rectangle =", MathArea.breadth)
+print("Area of rectangle", MathArea.area())
 
 
+# The __init__() Function
+
+# All classes have a function called __init__(), which is always executed when the class is being initiated.
+# Use the __init__() function to assign values to object argument
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
 
-
-
+p1 = Person("Manish", 36) # class initiation or instance creation
+p2 = Person("Shipra",30)
+print(p1.name , p1.age)
+print(p2.name , p2.age)
+print(p1)
+print(p2)
+# P1 is instance for Manish and P2 is instance for Shipra
+# P1 is not equal to p2
+print(p1==p2)
