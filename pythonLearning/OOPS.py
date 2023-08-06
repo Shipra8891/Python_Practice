@@ -84,18 +84,51 @@ print("Area of rectangle", MathArea.area())
 
 # All classes have a function called __init__(), which is always executed when the class is being initiated.
 # Use the __init__() function to assign values to object argument
+# when ever class is initiated __init__ function will be called automatically and it will set the parameter value
 class Person:
     def __init__(self, name, age):
-        self.name = name
+        self.name = name  # self.name is not variable here ...in class we call it attribute
         self.age = age
 
 
-p1 = Person("Manish", 36) # class initiation or instance creation
-p2 = Person("Shipra",30)
-print(p1.name , p1.age)
-print(p2.name , p2.age)
+p1 = Person("Manish", 36)  # class initiation or instance creation or object creation
+p2 = Person("Shipra", 30)
+print(p1.name, p1.age)
+print(p2.name, p2.age)
 print(p1)
 print(p2)
 # P1 is instance for Manish and P2 is instance for Shipra
 # P1 is not equal to p2
-print(p1==p2)
+print(p1 == p2)
+
+
+# area of circle
+
+class Circle:
+    pi = 3.14  # it will common for every instance # class level variable or attribute
+
+    def __init__(self, radius):  # constructor
+        self.radius = radius
+
+    def area(self):
+        # return self.radius * self.radius * 3.14
+        return self.radius * self.radius * Circle.pi
+
+
+print("Class for area of circle")
+c1 = Circle(3)  # initiate / instantiate / create object
+print(c1)
+c1.area()
+print("Area of circle =", c1.area())
+
+c2 = Circle(7)
+c2.area()
+
+# Practice school name example of darshil
+
+# difference between class level attribute and instance level attribute
+# Class level attribute is same for every instance
+# instance level attribute is different for every instance
+
+# practice .show from student class of darshil
+
