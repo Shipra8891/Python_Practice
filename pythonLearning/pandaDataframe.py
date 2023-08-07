@@ -75,4 +75,12 @@ print(df_test1['city'].nunique())
 
 print(df_test1['city'].value_counts())
 
+print("______________________________Data Manupulation________________________")
+# first we create data frame by using csv file or manually.
+# now based on the requirement we transform and modify, manupulate the above created dataframe.
+
+# creating weather data frame
+weather_df = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\weather_2012.csv")
+print(weather_df)
+print(weather_df.head(5))
 
