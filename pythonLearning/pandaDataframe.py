@@ -55,7 +55,7 @@ print("------- dataframe analyze-------")
 print(df_test1.info())
 
 # .head() - it gives total rows data.
-# by default it gives 5 rows data only....head()
+# by default, it gives 5 rows data only....head()
 # if you want more data write under head bracket
 # head print from top
 # tail print last or from bottom
