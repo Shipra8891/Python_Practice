@@ -1,7 +1,7 @@
 name,city,occupation
-manish,pune,engineer
+manish,pune,
 shipra,pune,data analyst
-mohan,gaya,engineer
+mohan,gaya,
 shilpa,pune,data analyst
-mani,pune,engineer
-shalu,delhi,data analyst
+mani,,engineer
+,delhi,data analyst
