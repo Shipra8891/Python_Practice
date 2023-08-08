@@ -40,6 +40,16 @@ print(mean_temperature_df)
 
 #print(weather_df_group)
 
+data = {
+  'co2': [95, 90, 99, 104, 105, 94, 99, 104],
+  'model': ['Citigo', 'Fabia', 'Fiesta', 'Rapid', 'Focus', 'Mondeo', 'Octavia', 'B-Max'],
+  'car': ['Skoda', 'Skoda', 'Ford', 'Skoda', 'Ford', 'Ford', 'Skoda', 'Ford']
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
 
 
 
