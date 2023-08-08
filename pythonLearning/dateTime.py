@@ -71,6 +71,35 @@ df_assemble2['day']= df_assemble2['DoB'].dt.day
 print(df_assemble2['year'])
 print(df_assemble2['month'])
 print(df_assemble2['day'])
+print(df_assemble2)
 
+# get the week of year,the day of week and leap year
+df_assemble2['week_of_year'] = df_assemble2['DoB'].dt.isocalendar
+df_assemble2['day_of_week'] = df_assemble2['DoB'].dt.dayofweek
+df_assemble2['is_leap_year'] = df_assemble2['DoB'].dt.is_leap_year
 
+print(df_assemble2['week_of_year'])
+print(df_assemble2['day_of_week'])
+print(df_assemble2['is_leap_year'])
+
+print(df_assemble2['DoB'].dt.weekday)
+
+dw_mapping={
+    0: 'Monday',
+    1: 'Tuesday',
+    2: 'Wednesday',
+    3: 'Thursday',
+    4: 'Friday',
+    5: 'Saturday',
+    6: 'Sunday'
+        }
+df_assemble2['day_of_week_name'] =df_assemble2['DoB'].dt.weekday.map(dw_mapping)
+print(df_assemble2['day_of_week_name'])
+print(df_assemble2)
+
+# get the age from the date of birth
+today = pd.to_datetime('today')
+df_assemble2['age'] = today.year - df_assemble2['DoB'].dt.year
+print(df_assemble2['age'])
+print(df_assemble2)
 
