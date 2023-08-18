@@ -1,6 +1,6 @@
 # collection of unique elements with no duplicates
-sets1 = [1, 1, 1, 2, 2, 2, 3, 3, 3, ]
-print("result of sets1 =", set(sets1))
+sets1_list = [1, 1, 1, 2, 2, 2, 3, 3, 3]
+print("result of sets1 =", set(sets1_list))
 x = set()
 x.add(1)
 print(x)

@@ -1,6 +1,6 @@
 # python string - strings are number of characters,
 # such as letters,numbers,or symbols enclosed with quotes.
-
+from pythonLearning.pythonBasic import filter_odd_even
 
 my_string = ("my name is shipra")
 print(type(my_string))
@@ -160,5 +160,8 @@ print(y)
 numbers =[1,2,3,4,5]
 print("result of pop",numbers.pop(2))
 print(numbers)
+
+new_list1 = [200,199,123,22,45,78]
+filter_odd_even(new_list1)
 
 
