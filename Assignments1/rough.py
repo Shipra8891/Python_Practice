@@ -117,4 +117,56 @@ tup_res = tuple(map(sum,zip(tup1,tup2,tup3)))
 # what is map ??????
 print(tup_res)
 
+print("___convert list of tuple into list of list____________")
+input_list = [(1,2),(2,3),(3,4)]
+tupleto_list = [list(t) for t in input_list]
+print(tupleto_list)
 
+print("___________SET_____________")
+S1 = {1,2,3,4}
+S2 = {4,5,6,7}
+print("False,common element is",(S1 & S2))
+
+print(S1.isdisjoint(S2))
+
+print("-----------check element exist or not-------------------------")
+set_1 = {1,3,5,7,9,11}
+
+for i in set_1:
+        if i==10:
+            print("true")
+        else:
+            print("False")
+print("______another method________")
+value_to_check = 10
+print(value_to_check in set_1)
+
+print("-------remove duplicates________")
+data_set= ["Python","Exercise","Practice","Solution","Exercise"]
+print(set(data_set))
+
+print("---------dictionary--------------")
+print("add new value")
+dict = {0:10,1:20}
+new_key=2
+new_value=30
+dict[new_key]=new_value
+print(dict)
+
+dict[2]=30
+print(dict)
+
+
+
+print("------concatenate dictionary----------")
+dic1={0:10,1:20}
+dic2={3:30,4:40}
+dic3={5:50,6:60}
+
+output_dict={}
+output_dict.update(dic1)
+output_dict.update(dic2)
+output_dict.update(dic3)
+print(output_dict)
+
+print(dic1 + dic2 +dic3)
