@@ -169,4 +169,23 @@ output_dict.update(dic2)
 output_dict.update(dic3)
 print(output_dict)
 
-print(dic1 + dic2 +dic3)
+print("______remove a key__________")
+input_dictionary = {
+           'name':'John Doe',
+           'age': 30,
+           'occupation':'Software Engineer',
+           'email':'john@example.com',
+           'is_employed':True
+                   }
+key_to_remove= 'age'
+del input_dictionary[key_to_remove]
+print(input_dictionary)
+
+print("__________remove duplicates_____________")
+original_dict = {'a':1,'b':2,'c':3,'d':3,'e':2,'f':4}
+temp=[]
+
+
+
+
+
