@@ -1,4 +1,6 @@
 #
+import d
+
 a = [10,20,30,20,10,50,60,40,80,50,40]
 (set(a))
 print(set(a))
@@ -184,7 +186,81 @@ print(input_dictionary)
 print("__________remove duplicates_____________")
 original_dict = {'a':1,'b':2,'c':3,'d':3,'e':2,'f':4}
 temp=[]
+resultant_dictionary ={}
+for key ,val in original_dict.items():
+    if val not in temp:
+        temp.append(val)
+        resultant_dictionary[key] = val
 
+print(resultant_dictionary)
+
+print("-------find max and min values of a dictionary--------")
+# find max and min value of a dictionary
+# Input: {‘u’:1000,’v’:3000,'x':500, 'y':5874, 'z': 560}
+# use max() and min() functions to find values
+
+dictionary = {'u':1000,'v':3000,'x':500,'y':5874,'z':560}
+
+max_value= max(dictionary.values())
+print("Maximum Value :",max_value)
+
+min_value= min(dictionary.values())
+print("Minimum Value :",min_value)
+
+# How to check if dictionary is empty
+# Use the if statement to check if the dictionary is empty.
+# input : my_dict = {}
+
+my_dic = {}
+
+if not my_dic :
+    print("Dictionary is Empty")
+else:
+    print("Dictionary is not Empty")
+
+# find fifth value of each key from dictionary.
+# input:
+input_dict ={'x': [11, 12, 13, 14, 15, 16, 17, 18, 19],
+            'y': [21, 22, 23, 24, 25, 26, 27, 28, 29],
+            'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]}
+
+value_x =input_dict['x'][4]
+value_y =input_dict['y'][4]
+value_z =input_dict['z'][4]
+
+print(value_x)
+print(value_y)
+print(value_z)
+
+# drop empty (None value) items from dictionary
+# Input: {'c1': 'Red', 'c2': 'Green', 'c3': None}
+
+input_dict = {'c':'Red','c2':'Green','c3':None}
+output_dict ={key:value for key,value in input_dict.items() if value is not None}
+
+print(output_dict)
+
+# filter out from dictionary.
+# find the values > 170 from dictionary.
+
+Input_dict: {'Cierra Vega': 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox':190}
+output_dict1 ={key:value for key,value in Input_dict.items() if value > 170}
+print(output_dict1)
+
+# how to verify that all values in a dictionary are same.
+# Input: {'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}
+# use set() to check if it has only one element
+
+input_dictionary = {'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}
+if len(set(input_dictionary.values()))==1:
+    print("All values are",list(set(input_dictionary.values()))[0])
+else:
+    print("Values are not the same")
+
+# convert dictionary into integer type.
+# INPUT:[{'x': '10', 'y': '20', 'z': '30'}, {'p': '40', 'q': '50', 'r': '60'}
+convert_dict= [{'x': '10', 'y': '20', 'z': '30'}, {'p': '40', 'q': '50', 'r': '60'}]
+integer_dict =[{key:int(value) for key,value in d.items() for d in convert_dict}]
 
 
 
