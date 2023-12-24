@@ -1,6 +1,6 @@
 # python string - strings are number of characters,
 # such as letters,numbers,or symbols enclosed with quotes.
-from pythonLearning.pythonBasic import filter_odd_even
+from pythonLearning.Basic.pythonBasic import filter_odd_even
 
 my_string = ("my name is shipra")
 print(type(my_string))

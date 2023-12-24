@@ -38,6 +38,8 @@ def add(a, b):
 
 print(add(2, 3))
 
+print(add(33,44))
+
 
 class Teacher:
     # A simple class  # attribute

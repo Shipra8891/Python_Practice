@@ -3,7 +3,7 @@
 import numpy as np
 import pandas as pd
 
-from pythonLearning.pandaDataframe import weather_df
+from pythonLearning.Basic.pandaDataframe import weather_df
 
 data = {
     'A': ['foo','foo','foo','bar','bar','bar'],

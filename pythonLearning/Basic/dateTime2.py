@@ -1,12 +1,12 @@
 import pandas as pd
-df_dateIndex1 = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\data\city_sales.csv")
+df_dateIndex1 = pd.read_csv(r"/pythonLearning/data/city_sales.csv")
 print("Original New Dataframe")
 print(df_dateIndex1.head())
 df_dateIndex1.info()
 
 # improve performance by setting date column as the index
 
-df_dateIndex2 = pd.read_csv('data/city_sales.csv',parse_dates=['date'])
+df_dateIndex2 = pd.read_csv('../data/city_sales.csv', parse_dates=['date'])
 print("Second dataframe Information")
 df_dateIndex2.info()
 
@@ -51,7 +51,7 @@ print(df_dateIndex4)
 df_dateIndex4= df_dateIndex3.between_time('10:30','10:45')
 print(df_dateIndex4)
 
-df_null = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\a.csv")
+df_null = pd.read_csv(r"/pythonLearning/a.csv")
 print("-----------meaning of fillna --------------")
 print(df_null)
 newdf = df_null.fillna(222222)

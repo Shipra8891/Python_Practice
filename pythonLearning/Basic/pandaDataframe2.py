@@ -4,7 +4,7 @@
 
 
 # from pythonLearning.pandaDataframe import weather_df
-from pythonLearning.pandaDataframe import *
+from pythonLearning.Basic.pandaDataframe import *
 import pandas as pd
 
 pd.set_option('display.max_columns', 15)

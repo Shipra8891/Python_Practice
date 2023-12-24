@@ -35,7 +35,7 @@ print("index:", df2.index)
 print(df2)
 
 # reading data frame from file
-df_test1 = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\a.csv")
+df_test1 = pd.read_csv(r"/pythonLearning/a.csv")
 
 # rule 1 -copy path and paste here, put r before it.
 # rule 2 - change \ to / and print
@@ -83,7 +83,7 @@ print("______________________________Data Manupulation________________________")
 # now based on the requirement we transform and modify, manipulate the above created dataframe.
 
 # creating weather data frame
-weather_df = pd.read_csv(r"C:\Users\Shipra\PycharmProjects\PythonPractice\pythonLearning\weather_2012.csv")
+weather_df = pd.read_csv(r"/pythonLearning/weather_2012.csv")
 print(weather_df)
 print(weather_df.head(5))
 print(weather_df.info())

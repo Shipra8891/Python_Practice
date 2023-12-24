@@ -13,10 +13,10 @@ data = {
     }
 }
 
-with open("data_file.json", "w") as write_file:
+with open("../data/data_file.json", "w") as write_file:
     json.dump(data, write_file)
 
-with open("data_file.json", "r") as read_file:
+with open("../data/data_file.json", "r") as read_file:
         data = json.load(read_file)
 
 print(data)
@@ -40,6 +40,6 @@ df3 = pd.DataFrame.from_dict(data, orient ='index')
 print(df3)
 
 print("hr data")
-hr_df = pd.read_csv('data/hrdata.csv', index_col='Name')
+hr_df = pd.read_csv('hrdata.csv', index_col='Name')
 
 print(hr_df)
