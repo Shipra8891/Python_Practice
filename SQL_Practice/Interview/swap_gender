@@ -1,0 +1,21 @@
+
+CREATE TABLE SWAP (
+         customer_name VARCHAR (20),
+         gender VARCHAR (10)
+                   );
+
+INSERT INTO SWAP (customer_name,gender)
+VALUES ("Manish", "Female"),
+	   ("Shipra", "Female"),
+       ("Shiksha", "Male"),
+       ("Yuvanshu", "Female"),
+       ("Nirvaan", "Male"),
+       ("Ansh", "Female");
+
+SELECT * FROM SWAP;
+
+UPDATE SWAP SET gender="Male" WHERE customer_name in ("Shipra");
+
+UPDATE SWAP SET gender = CASE WHEN gender = "Male" THEN "Female"
+                     WHEN gender ="Female" THEN "Male"
+                     END;
